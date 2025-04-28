@@ -1,0 +1,129 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0d1117; 
+    color: #c9d1d9;
+}
+
+
+.hero {
+    background-color: #161b22; 
+    color: #58a6ff; 
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #58a6ff;
+    margin-bottom: 20px;
+}
+
+
+.about {
+    padding: 40px 20px;
+    background-color: #161b22;
+}
+
+
+.skills {
+    padding: 40px 20px;
+    background-color: #0d1117;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #21262d;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+}
+
+/* Projects Section */
+.projects {
+    padding: 40px 20px;
+    background-color: #161b22;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background: #21262d;
+    padding: 20px;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #c9d1d9;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(88, 166, 255, 0.2);
+}
+
+
+.contact {
+    padding: 40px 20px;
+    background-color: #0d1117;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #238636; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    background-color: #2ea043;
+}
+
+
+@media (max-width: 600px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
